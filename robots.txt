@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://theassignmentbooks.com/sitemap.xml
