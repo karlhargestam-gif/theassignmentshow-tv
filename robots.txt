@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://theassignmentbooks.com/sitemap.xml
+Sitemap: https://www.theassignmentshow.tv/sitemap.xml
