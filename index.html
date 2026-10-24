@@ -12,7 +12,8 @@
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <link rel="canonical" href="https://www.theassignmentshow.tv/" />
-  <link rel="preload" as="image" href="/ethiopia-highlands-hero.jpg" fetchpriority="high" />
+  <link rel="preload" as="image" type="image/avif" href="/ethiopia-highlands-hero-portrait-1102.avif" media="(max-width: 760px) and (max-aspect-ratio: 3/4)" fetchpriority="high" />
+  <link rel="preload" as="image" type="image/avif" imagesrcset="/ethiopia-highlands-hero-1280.avif 1280w, /ethiopia-highlands-hero-1920.avif 1920w" imagesizes="100vw" media="not all and (max-width: 760px) and (max-aspect-ratio: 3/4)" fetchpriority="high" />
   <link rel="alternate" hreflang="en" href="https://www.theassignmentshow.tv/" />
   <link rel="alternate" hreflang="x-default" href="https://www.theassignmentshow.tv/" />
   <meta property="og:type" content="video.tv_show" />
@@ -52,7 +53,8 @@
     .nav{position:absolute;z-index:10;top:0;left:0;right:0;display:flex;justify-content:flex-end;gap:1.4rem;align-items:center;padding:1.2rem clamp(1.15rem,4vw,4.5rem);font-size:.76rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#fff}
     .nav a{text-decoration:none}.nav a:hover,.nav a:focus-visible{color:#ff4c53}
     .nav .watch{border:1px solid rgba(255,255,255,.65);padding:.62rem .9rem}
-    .hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;padding:clamp(6.8rem,13vw,10rem) clamp(1.15rem,7vw,7rem) clamp(3rem,7vw,6rem);isolation:isolate;background:#111 url('/ethiopia-highlands-hero.jpg') center 52%/cover no-repeat;color:#fff}
+    .hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;padding:clamp(6.8rem,13vw,10rem) clamp(1.15rem,7vw,7rem) clamp(3rem,7vw,6rem);isolation:isolate;background:#111;color:#fff}
+    .hero-media{position:absolute;inset:0;z-index:-3;display:block}.hero-media img{width:100%;height:100%;object-fit:cover;object-position:center 52%;display:block}
     .hero::before{content:"";position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(0,0,0,.88) 0%,rgba(0,0,0,.6) 42%,rgba(0,0,0,.14) 76%),linear-gradient(0deg,rgba(0,0,0,.9),transparent 55%)}
     .hero::after{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(circle at 70% 35%,rgba(255,130,0,.16),transparent 32%);mix-blend-mode:screen}
     .hero-content{max-width:900px}
@@ -94,14 +96,16 @@
     .link-list{margin-top:2rem;border-top:1px solid #bebbb2}
     .big-link{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.4rem 0;border-bottom:1px solid #bebbb2;text-decoration:none;font-size:clamp(1.2rem,2.5vw,2rem);font-weight:700;letter-spacing:-.025em}
     .big-link span:last-child{color:var(--red);font-size:1.4rem}.big-link:hover,.big-link:focus-visible{color:var(--red)}
-    .mini-poster{background:#111 url('/ethiopia-highlands-hero.jpg') center/cover no-repeat;aspect-ratio:3/4;min-height:420px;padding:clamp(1.4rem,3vw,2.4rem);color:#fff;display:flex;flex-direction:column;justify-content:space-between;box-shadow:var(--shadow);position:relative;isolation:isolate}
+    .mini-poster{background:#111 url('/ethiopia-highlands-hero.jpg') center/cover no-repeat;background-image:image-set(url('/ethiopia-highlands-poster-720.avif') type('image/avif'),url('/ethiopia-highlands-poster-720.webp') type('image/webp'),url('/ethiopia-highlands-hero.jpg') type('image/jpeg'));aspect-ratio:3/4;min-height:420px;padding:clamp(1.4rem,3vw,2.4rem);color:#fff;display:flex;flex-direction:column;justify-content:space-between;box-shadow:var(--shadow);position:relative;isolation:isolate}
+        /* WCAG AA contrast for section labels: darker red on light sections, lighter red on the black cast section. */
+    .section-label{color:var(--red-dark)}#cast .section-label{color:#ff5a61}
     .mini-poster::before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.86));z-index:-1}
     .mini-poster .top{font-size:.7rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase}.mini-poster .title{font-size:clamp(2.3rem,5vw,4rem);font-weight:900;letter-spacing:-.07em;line-height:.8;text-transform:uppercase}.mini-poster .title em{display:block;font-family:"Bodoni Moda",serif;font-weight:500;text-transform:none;font-size:1.05em;letter-spacing:-.03em}.mini-poster .bottom{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase}
     footer{background:#050505;color:#aaa;padding:1.5rem clamp(1.15rem,7vw,7rem);font-size:.72rem}
     footer .foot{max-width:1240px;margin:auto;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}footer a{color:#ccc}
     @media(max-width:760px){
       .nav{justify-content:flex-start;gap:1rem}.nav a:not(.watch){display:none}.nav .watch{margin-left:auto}
-      .hero{min-height:92svh;background-position:62% center}.hero::before{background:linear-gradient(90deg,rgba(0,0,0,.88),rgba(0,0,0,.38)),linear-gradient(0deg,rgba(0,0,0,.9),transparent 60%)}
+      .hero{min-height:92svh;background-position:62% center}.hero-media img{object-position:62% center}.hero::before{background:linear-gradient(90deg,rgba(0,0,0,.88),rgba(0,0,0,.38)),linear-gradient(0deg,rgba(0,0,0,.9),transparent 60%)}
       .hero-url{display:block;position:static;margin:1.3rem 0 0;font-size:.64rem}.about,.links-grid{grid-template-columns:1fr}.quote{margin-top:1rem}.episode-intro{display:block}.episode-intro p{margin-top:1rem}.episode-grid{grid-template-columns:1fr}.episode,.episode:nth-child(odd){padding:1.6rem 0 1.8rem;border-right:0;min-height:0}.episode .btn{margin-top:1.3rem}.cast-list{grid-template-columns:1fr}.cast-name{min-height:86px}.mini-poster{max-width:430px;width:100%;margin:1rem auto 0}
     }
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
@@ -137,7 +141,7 @@
         "inLanguage":"en",
         "description":"Ten strangers with a desire to reach the lost are dropped into a foreign and exotic land, with minimal supplies and knowledge.",
     "actor":[
-      {"@type":"Person","@id":"https://www.karlhargestam.com/#person","name":"Karl Hargestam","url":"https://www.karlhargestam.com/"},
+      {"@type":"Person","@id":"https://www.karlhargestam.com/#person","name":"Karl Hargestam","url":"https://www.karlhargestam.com/","sameAs":["https://about.me/hargestam", "https://www.linkedin.com/in/karl-hargestam-72327034", "https://www.pcgmission.org/", "https://www.pcg.org/about/leadership", "https://www.pcg.org/resource-library/assembly-2025-commissioning-the-hargestams", "https://hargestam.online/", "https://grokipedia.com/page/karl-hargestam", "https://ocfep.com/", "https://www.imdb.com/name/nm5412265/", "https://www.amazon.com/stores/author/B00IIVNT1K", "https://www.pcg.org/authors/karl-hargestam", "https://www.instagram.com/karlhargestam/", "https://www.theassignmentbooks.com/", "https://www.theassignmentshow.tv/"]},
       {"@type":"Person","name":"Nick Sartoris"},
       {"@type":"Person","name":"Jason Smethers"}
     ],
@@ -168,6 +172,13 @@
 
   <main>
     <section class="hero" aria-labelledby="hero-title">
+      <picture class="hero-media" aria-hidden="true">
+        <source type="image/avif" media="(max-width: 760px) and (max-aspect-ratio: 3/4)" srcset="/ethiopia-highlands-hero-portrait-1102.avif">
+        <source type="image/webp" media="(max-width: 760px) and (max-aspect-ratio: 3/4)" srcset="/ethiopia-highlands-hero-portrait-1102.webp">
+        <source type="image/avif" srcset="/ethiopia-highlands-hero-1280.avif 1280w, /ethiopia-highlands-hero-1920.avif 1920w" sizes="100vw">
+        <source type="image/webp" srcset="/ethiopia-highlands-hero-1280.webp 1280w, /ethiopia-highlands-hero-1920.webp 1920w" sizes="100vw">
+        <img src="/ethiopia-highlands-hero.jpg" alt="" width="2200" height="1469" fetchpriority="high" decoding="async">
+      </picture>
       <div class="hero-content">
         <div class="poster-mark">
           <p class="hero-kicker">A reality documentary series</p>
