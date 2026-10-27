@@ -1,0 +1,115 @@
+    :root {
+      --bg:#0b0b0b; --surface:#141414; --surface-2:#1d1d1d; --ink:#f7f7f5;
+      --muted:#b8b8b4; --line:#343434; --red:#e5222b; --red-dark:#b71118;
+      --paper:#f0efeb; --black:#050505; --shadow:0 24px 80px rgba(0,0,0,.35);
+    }
+    @media (prefers-color-scheme: light) {
+      :root { --bg:#f5f4f0; --surface:#ffffff; --surface-2:#e9e7e1; --ink:#111111; --muted:#545451; --line:#d1cec6; --shadow:0 24px 80px rgba(0,0,0,.12); }
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;background:var(--bg)}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:"Libre Franklin",sans-serif;line-height:1.55;overflow-x:hidden}
+    a{color:inherit}
+    img{display:block;max-width:100%}
+    .nav{position:absolute;z-index:10;top:0;left:0;right:0;display:flex;justify-content:flex-end;gap:1.4rem;align-items:center;padding:1.2rem clamp(1.15rem,4vw,4.5rem);font-size:.76rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#fff}
+    .nav a{text-decoration:none}.nav a:hover,.nav a:focus-visible{color:#ff4c53}
+    .nav .watch{border:1px solid rgba(255,255,255,.65);padding:.62rem .9rem}
+    .hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;padding:clamp(6.8rem,13vw,10rem) clamp(1.15rem,7vw,7rem) clamp(3rem,7vw,6rem);isolation:isolate;background:#111;color:#fff}
+    .hero-media{position:absolute;inset:0;z-index:-3;display:block}.hero-media img{width:100%;height:100%;object-fit:cover;object-position:center 52%;display:block}
+    .hero::before{content:"";position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(0,0,0,.88) 0%,rgba(0,0,0,.6) 42%,rgba(0,0,0,.14) 76%),linear-gradient(0deg,rgba(0,0,0,.9),transparent 55%)}
+    .hero::after{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(circle at 70% 35%,rgba(255,130,0,.16),transparent 32%);mix-blend-mode:screen}
+    .hero-content{max-width:900px}
+    .poster-mark{border-left:clamp(.45rem,1vw,.7rem) solid var(--red);padding-left:clamp(1rem,2.2vw,2rem)}
+    .hero-kicker{margin:0 0 .4rem;font-size:clamp(.78rem,1.5vw,1rem);font-weight:700;letter-spacing:.26em;text-transform:uppercase}
+    h1{margin:0;font-size:clamp(3.15rem,11.5vw,9.5rem);line-height:.78;letter-spacing:-.075em;font-weight:900;text-transform:uppercase;max-width:9ch}
+    .ethiopia{display:block;margin-top:.4rem;font-family:"Bodoni Moda",serif;font-style:italic;font-size:clamp(2.8rem,8.5vw,7rem);font-weight:500;letter-spacing:-.04em;text-transform:none;color:#fff}
+    .tagline{margin:clamp(1.3rem,3vw,2.2rem) 0 0;max-width:28rem;font-size:clamp(1rem,1.8vw,1.25rem);font-weight:600;letter-spacing:.02em}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.6rem}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:48px;padding:.75rem 1rem;border:1px solid currentColor;text-decoration:none;font-size:.77rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;transition:background .2s,color .2s,border-color .2s}
+    .btn svg{width:1.1rem;height:1.1rem;fill:currentColor}
+    .btn-red{background:var(--red);border-color:var(--red);color:#fff}.btn-red:hover,.btn-red:focus-visible{background:#fff;border-color:#fff;color:#111}
+    .btn-ghost{color:#fff;border-color:rgba(255,255,255,.65)}.btn-ghost:hover,.btn-ghost:focus-visible{background:#fff;color:#111}
+    .hero-url{position:absolute;right:clamp(1.2rem,4vw,4rem);bottom:1.5rem;margin:0;color:rgba(255,255,255,.7);font-size:.72rem;letter-spacing:.13em;text-transform:uppercase}
+    .section{padding:clamp(4.5rem,9vw,8rem) clamp(1.15rem,7vw,7rem)}
+    .section-inner{max-width:1240px;margin:0 auto}
+    .section-label{display:flex;align-items:center;gap:.8rem;margin:0 0 1.2rem;color:var(--red);font-size:.72rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.section-label::before{content:"";width:2.5rem;height:2px;background:var(--red)}
+    h2{font-size:clamp(2.45rem,6.4vw,5.7rem);line-height:.95;letter-spacing:-.055em;margin:0;font-weight:800}
+    .lede{font-size:clamp(1.25rem,2.8vw,2.25rem);line-height:1.32;letter-spacing:-.025em;margin:1.8rem 0 0;max-width:35ch}
+    .about{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(260px,.6fr);gap:clamp(2rem,7vw,7rem);align-items:end}
+    .quote{margin:0;padding-top:1.2rem;border-top:2px solid var(--red);font-family:"Bodoni Moda",serif;font-size:clamp(1.25rem,2.2vw,1.75rem);font-style:italic;line-height:1.35;color:var(--muted)}
+    .episodes{background:var(--surface)}
+    .episode-intro{display:flex;align-items:end;justify-content:space-between;gap:2rem;margin-bottom:3rem}
+    .episode-intro p{margin:0 0 .35rem;max-width:28rem;color:var(--muted)}
+    .episode-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--line)}
+    .episode{position:relative;padding:clamp(1.4rem,3vw,2.3rem) clamp(0rem,2.4vw,2.3rem) 2.3rem;border-bottom:1px solid var(--line);display:flex;flex-direction:column;min-height:320px}
+    .episode:nth-child(odd){padding-left:0;border-right:1px solid var(--line)}
+    .episode-number{font-family:"Bodoni Moda",serif;font-size:clamp(3rem,6vw,5rem);line-height:1;color:var(--red);font-variant-numeric:tabular-nums}
+    .episode h3{font-size:clamp(1.4rem,2.5vw,2rem);line-height:1.13;letter-spacing:-.035em;margin:.8rem 0 .9rem}
+    .episode p{margin:0;color:var(--muted);font-size:.95rem;max-width:58ch}
+    .episode .btn{align-self:flex-start;margin-top:auto;padding-top:.65rem;padding-bottom:.65rem;min-height:42px;color:var(--ink)}
+    .episode .btn:hover,.episode .btn:focus-visible{background:var(--red);border-color:var(--red);color:#fff}
+    .credits{background:var(--black);color:#fff;position:relative;overflow:hidden}
+    .credits::before{content:"ASSIGNMENT";position:absolute;right:-.08em;top:-.18em;font-size:clamp(5rem,20vw,18rem);font-weight:900;letter-spacing:-.08em;color:rgba(255,255,255,.035);white-space:nowrap}
+    .cast-list{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#333;margin-top:2.5rem}
+    .cast-name{background:#111;padding:clamp(1.2rem,3vw,2rem);font-size:clamp(1.15rem,2vw,1.7rem);font-weight:700;min-height:130px;display:flex;align-items:flex-end}
+    .links-section{background:var(--paper);color:#111}
+    .links-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:clamp(2rem,7vw,7rem);align-items:start}
+    .link-list{margin-top:2rem;border-top:1px solid #bebbb2}
+    .big-link{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.4rem 0;border-bottom:1px solid #bebbb2;text-decoration:none;font-size:clamp(1.2rem,2.5vw,2rem);font-weight:700;letter-spacing:-.025em}
+    .big-link span:last-child{color:var(--red);font-size:1.4rem}.big-link:hover,.big-link:focus-visible{color:var(--red)}
+    .mini-poster{background:#111 url('/ethiopia-highlands-hero.jpg') center/cover no-repeat;background-image:image-set(url('/ethiopia-highlands-poster-600.avif') type('image/avif'),url('/ethiopia-highlands-poster-600.webp') type('image/webp'),url('/ethiopia-highlands-hero.jpg') type('image/jpeg'));aspect-ratio:3/4;min-height:420px;padding:clamp(1.4rem,3vw,2.4rem);color:#fff;display:flex;flex-direction:column;justify-content:space-between;box-shadow:var(--shadow);position:relative;isolation:isolate}
+        /* WCAG AA contrast for section labels: darker red on light sections, lighter red on the black cast section. */
+    .section-label{color:var(--red-dark)}#cast .section-label{color:#ff5a61}
+    .mini-poster::before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.86));z-index:-1}
+    .mini-poster .top{font-size:.7rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase}.mini-poster .title{font-size:clamp(2.3rem,5vw,4rem);font-weight:900;letter-spacing:-.07em;line-height:.8;text-transform:uppercase}.mini-poster .title em{display:block;font-family:"Bodoni Moda",serif;font-weight:500;text-transform:none;font-size:1.05em;letter-spacing:-.03em}.mini-poster .bottom{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase}
+    footer{background:#050505;color:#aaa;padding:1.5rem clamp(1.15rem,7vw,7rem);font-size:.72rem}
+    footer .foot{max-width:1240px;margin:auto;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}footer a{color:#ccc}
+    @media(max-width:760px){
+      .nav{justify-content:flex-start;gap:1rem}.nav a:not(.watch){display:none}.nav .watch{margin-left:auto}
+      .hero{min-height:92svh;background-position:62% center}.hero-media img{object-position:62% center}.hero::before{background:linear-gradient(90deg,rgba(0,0,0,.88),rgba(0,0,0,.38)),linear-gradient(0deg,rgba(0,0,0,.9),transparent 60%)}
+      .hero-url{display:block;position:static;margin:1.3rem 0 0;font-size:.64rem}.about,.links-grid{grid-template-columns:1fr}.quote{margin-top:1rem}.episode-intro{display:block}.episode-intro p{margin-top:1rem}.episode-grid{grid-template-columns:1fr}.episode,.episode:nth-child(odd){padding:1.6rem 0 1.8rem;border-right:0;min-height:0}.episode .btn{margin-top:1.3rem}.cast-list{grid-template-columns:1fr}.cast-name{min-height:86px}.mini-poster{max-width:430px;width:100%;margin:1rem auto 0}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* episode pages */
+.episode h3 a{color:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.14em}
+.episode h3 a:hover,.episode h3 a:focus-visible{color:var(--red)}
+.episode-actions{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;margin-top:auto;padding-top:1.1rem}
+.episode .episode-actions .btn{margin-top:0}
+.skip{position:absolute;left:1rem;top:0;transform:translateY(-120%);background:#fff;color:#111;padding:.6rem 1rem;z-index:30;font-weight:800;text-decoration:none}
+.skip:focus{transform:none}
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.subnav{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.4rem clamp(1.15rem,7vw,7rem);background:#050505;color:#fff}
+.subnav a{color:#fff;text-decoration:none;font-size:.8125rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.subnav a:hover,.subnav a:focus-visible{color:#ff5a61}
+.subnav nav{display:flex;gap:1.2rem;align-items:center}
+.subnav nav a{display:inline-flex;align-items:center;min-height:48px}
+.subnav .brand{font-size:1rem;font-weight:900;letter-spacing:-.04em;min-height:48px;display:inline-flex;align-items:center}
+.subnav .watch{border:1px solid rgba(255,255,255,.65);padding:.62rem .9rem}
+.episode-page h1{margin:0;max-width:22ch;font-size:clamp(2.4rem,6.2vw,4.6rem);line-height:1.02;letter-spacing:-.045em;font-weight:800;text-transform:none}
+.episode-page .section-inner{max-width:760px}
+.episode-page .section-label,.episode-page .pager-kicker{color:#ff5a61;font-size:.8125rem}
+.episode-page footer{font-size:.8125rem}
+.crumbs{margin:0 0 1.6rem}
+.crumbs ol{display:flex;flex-wrap:wrap;align-items:center;gap:.15rem 0;list-style:none;margin:0;padding:0;font-size:.875rem}
+.crumbs li{display:flex;align-items:center;min-height:48px}
+.crumbs li+li::before{content:"/";margin:0 .55rem;color:var(--muted)}
+.crumbs a{color:inherit;text-decoration:underline;text-underline-offset:.14em}
+.synopsis{font-size:1.125rem;line-height:1.6;max-width:62ch;margin:1.15rem 0 0}
+.watch-row{margin:1.6rem 0 0}
+.watch-row .btn{min-height:48px}
+.pager{display:flex;justify-content:space-between;gap:1rem;margin-top:2.4rem;border-top:1px solid var(--line);padding-top:.4rem}
+.pager a{display:flex;flex-direction:column;justify-content:center;gap:.2rem;min-height:48px;padding:.85rem 0;text-decoration:none;max-width:46%}
+.pager a[rel="next"]{margin-left:auto;text-align:right;align-items:flex-end}
+.pager a:hover .pager-title,.pager a:focus-visible .pager-title{text-decoration:underline;text-underline-offset:.12em}
+.pager-title{font-size:1.05rem;font-weight:700;letter-spacing:-.02em;line-height:1.25}
+@media (prefers-color-scheme: light){
+  .episode-page .section-label,.episode-page .pager-kicker{color:var(--red-dark)}
+}
+@media(max-width:760px){
+  .subnav{padding:.4rem 1.15rem}
+  .subnav nav a:not(.watch){display:none}
+  .episode .episode-actions{margin-top:1.3rem;padding-top:0}
+  .pager{flex-direction:column}
+  .pager a,.pager a[rel="next"]{max-width:none;margin-left:0;text-align:left;align-items:flex-start}
+}
