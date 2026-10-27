@@ -12,7 +12,7 @@
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <link rel="canonical" href="https://www.theassignmentshow.tv/" />
-  <link rel="preload" as="image" type="image/avif" href="/ethiopia-highlands-hero-portrait-1102.avif" media="(max-width: 760px) and (max-aspect-ratio: 3/4)" fetchpriority="high" />
+  <link rel="preload" as="image" type="image/avif" href="/ethiopia-highlands-hero-portrait-1102.avif" imagesrcset="/ethiopia-highlands-hero-portrait-800.avif 800w, /ethiopia-highlands-hero-portrait-1102.avif 1102w" imagesizes="100vw" media="(max-width: 760px) and (max-aspect-ratio: 3/4)" fetchpriority="high" />
   <link rel="preload" as="image" type="image/avif" imagesrcset="/ethiopia-highlands-hero-1280.avif 1280w, /ethiopia-highlands-hero-1920.avif 1920w" imagesizes="100vw" media="not all and (max-width: 760px) and (max-aspect-ratio: 3/4)" fetchpriority="high" />
   <link rel="alternate" hreflang="en" href="https://www.theassignmentshow.tv/" />
   <link rel="alternate" hreflang="x-default" href="https://www.theassignmentshow.tv/" />
@@ -35,7 +35,7 @@
   <meta name="twitter:image:alt" content="The Ethiopian highlands, setting of The Assignment: Ethiopia documentary series" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,ital,wght@6..96,500;6..96,600&family=Libre+Franklin:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,ital,wght@6..96,500;6..96,600&family=Libre+Franklin:wght@400;500;600;700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,ital,wght@6..96,500;6..96,600&family=Libre+Franklin:wght@400;500;600;700;800;900&display=swap"></noscript>
   <style>
     :root {
       --bg:#0b0b0b; --surface:#141414; --surface-2:#1d1d1d; --ink:#f7f7f5;
@@ -96,7 +96,7 @@
     .link-list{margin-top:2rem;border-top:1px solid #bebbb2}
     .big-link{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.4rem 0;border-bottom:1px solid #bebbb2;text-decoration:none;font-size:clamp(1.2rem,2.5vw,2rem);font-weight:700;letter-spacing:-.025em}
     .big-link span:last-child{color:var(--red);font-size:1.4rem}.big-link:hover,.big-link:focus-visible{color:var(--red)}
-    .mini-poster{background:#111 url('/ethiopia-highlands-hero.jpg') center/cover no-repeat;background-image:image-set(url('/ethiopia-highlands-poster-720.avif') type('image/avif'),url('/ethiopia-highlands-poster-720.webp') type('image/webp'),url('/ethiopia-highlands-hero.jpg') type('image/jpeg'));aspect-ratio:3/4;min-height:420px;padding:clamp(1.4rem,3vw,2.4rem);color:#fff;display:flex;flex-direction:column;justify-content:space-between;box-shadow:var(--shadow);position:relative;isolation:isolate}
+    .mini-poster{background:#111 url('/ethiopia-highlands-hero.jpg') center/cover no-repeat;background-image:image-set(url('/ethiopia-highlands-poster-600.avif') type('image/avif'),url('/ethiopia-highlands-poster-600.webp') type('image/webp'),url('/ethiopia-highlands-hero.jpg') type('image/jpeg'));aspect-ratio:3/4;min-height:420px;padding:clamp(1.4rem,3vw,2.4rem);color:#fff;display:flex;flex-direction:column;justify-content:space-between;box-shadow:var(--shadow);position:relative;isolation:isolate}
         /* WCAG AA contrast for section labels: darker red on light sections, lighter red on the black cast section. */
     .section-label{color:var(--red-dark)}#cast .section-label{color:#ff5a61}
     .mini-poster::before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.86));z-index:-1}
@@ -173,8 +173,8 @@
   <main>
     <section class="hero" aria-labelledby="hero-title">
       <picture class="hero-media" aria-hidden="true">
-        <source type="image/avif" media="(max-width: 760px) and (max-aspect-ratio: 3/4)" srcset="/ethiopia-highlands-hero-portrait-1102.avif">
-        <source type="image/webp" media="(max-width: 760px) and (max-aspect-ratio: 3/4)" srcset="/ethiopia-highlands-hero-portrait-1102.webp">
+        <source type="image/avif" media="(max-width: 760px) and (max-aspect-ratio: 3/4)" srcset="/ethiopia-highlands-hero-portrait-800.avif 800w, /ethiopia-highlands-hero-portrait-1102.avif 1102w" sizes="100vw">
+        <source type="image/webp" media="(max-width: 760px) and (max-aspect-ratio: 3/4)" srcset="/ethiopia-highlands-hero-portrait-800.webp 800w, /ethiopia-highlands-hero-portrait-1102.webp 1102w" sizes="100vw">
         <source type="image/avif" srcset="/ethiopia-highlands-hero-1280.avif 1280w, /ethiopia-highlands-hero-1920.avif 1920w" sizes="100vw">
         <source type="image/webp" srcset="/ethiopia-highlands-hero-1280.webp 1280w, /ethiopia-highlands-hero-1920.webp 1920w" sizes="100vw">
         <img src="/ethiopia-highlands-hero.jpg" alt="" width="2200" height="1469" fetchpriority="high" decoding="async">
