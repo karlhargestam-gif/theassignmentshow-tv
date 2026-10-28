@@ -392,7 +392,8 @@ def render_episode(ep: dict, episodes: list[dict]) -> str:
   <meta name="color-scheme" content="light dark" />
   <meta name="theme-color" content="#0b0b0b" media="(prefers-color-scheme: dark)" />
   <meta name="theme-color" content="#f5f4f0" media="(prefers-color-scheme: light)" />
-  <link rel="icon" href="data:," />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <title>{e_title}</title>
   <meta name="description" content="{e_desc}" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
