@@ -33,7 +33,11 @@ class PageParser(HTMLParser):
         self.meta = {}
         self.refs = []  # (attr, value)
         self.jsonld = []
+        self.imgs = []  # (src, alt or None)
+        self.h1_count = 0
+        self.title = []
         self._in_jsonld = False
+        self._in_title = False
         self._buf = []
 
     def handle_starttag(self, tag, attrs):
@@ -55,8 +59,17 @@ class PageParser(HTMLParser):
                 self.refs.append(("src", a["src"]))
         elif tag in ("a",) and a.get("href"):
             self.refs.append(("href", a["href"]))
-        elif tag in ("img", "source", "video", "audio", "track", "iframe") and a.get("src"):
+        elif tag == "img":
+            self.imgs.append((a.get("src") or "", a.get("alt")))
+            if a.get("src"):
+                self.refs.append(("src", a["src"]))
+        elif tag in ("source", "video", "audio", "track", "iframe") and a.get("src"):
             self.refs.append(("src", a["src"]))
+        elif tag == "h1":
+            self.h1_count += 1
+        elif tag == "title":
+            self._in_title = True
+            self._title_buf = []
         if tag in ("video",) and a.get("poster"):
             self.refs.append(("poster", a["poster"]))
 
@@ -64,10 +77,15 @@ class PageParser(HTMLParser):
         if tag == "script" and self._in_jsonld:
             self.jsonld.append("".join(self._buf))
             self._in_jsonld = False
+        elif tag == "title" and self._in_title:
+            self.title.append("".join(self._title_buf).strip())
+            self._in_title = False
 
     def handle_data(self, data):
         if self._in_jsonld:
             self._buf.append(data)
+        elif self._in_title:
+            self._title_buf.append(data)
 
 
 def html_files(root):
@@ -101,6 +119,45 @@ def resolve(root, page_path, url, host):
     return os.path.normpath(target)
 
 
+def schema_types(node):
+    found = set()
+
+    def walk(value):
+        if isinstance(value, dict):
+            kind = value.get("@type")
+            if isinstance(kind, str):
+                found.add(kind)
+            elif isinstance(kind, list):
+                found.update(item for item in kind if isinstance(item, str))
+            for child in value.values():
+                walk(child)
+        elif isinstance(value, list):
+            for child in value:
+                walk(child)
+
+    walk(node)
+    return found
+
+
+def schema_nodes(node, kind):
+    found = []
+
+    def walk(value):
+        if isinstance(value, dict):
+            node_type = value.get("@type")
+            types = node_type if isinstance(node_type, list) else [node_type]
+            if kind in types:
+                found.append(value)
+            for child in value.values():
+                walk(child)
+        elif isinstance(value, list):
+            for child in value:
+                walk(child)
+
+    walk(node)
+    return found
+
+
 def exists_as_page(target):
     if os.path.isfile(target):
         return True
@@ -113,6 +170,7 @@ def check(root, host, max_page_kb):
     errors, warnings = [], []
     root = os.path.abspath(root)
     pages = sorted(html_files(root))
+    titles = {}
     if not pages:
         errors.append("no .html files found")
 
@@ -133,8 +191,21 @@ def check(root, host, max_page_kb):
         p = PageParser()
         p.feed(html)
 
-        if not p.canonicals:
-            errors.append(f"{rel}: missing <link rel=\"canonical\">")
+        if len(p.canonicals) != 1:
+            errors.append(f"{rel}: expected exactly one canonical URL, found {len(p.canonicals)}")
+        if p.h1_count != 1:
+            errors.append(f"{rel}: expected exactly one <h1>, found {p.h1_count}")
+        if len(p.title) != 1 or not p.title[0]:
+            errors.append(f"{rel}: missing <title>")
+        elif p.title[0] in titles:
+            errors.append(f"{rel}: title duplicates {titles[p.title[0]]}")
+        else:
+            titles[p.title[0]] = rel
+        for src, alt in p.imgs:
+            if alt is None:
+                errors.append(f"{rel}: image {src or '(no src)'} is missing alt text")
+            elif not alt.strip():
+                errors.append(f"{rel}: image {src or '(no src)'} has empty alt text")
         for c in p.canonicals:
             cp = urlsplit(c)
             if cp.scheme != "https" or cp.hostname != host:
@@ -145,11 +216,46 @@ def check(root, host, max_page_kb):
             if v and not v.startswith("https://"):
                 errors.append(f"{rel}: {key} must be an absolute https URL, got {v!r}")
 
+        parsed_ld = []
         for block in p.jsonld:
             try:
-                json.loads(block)
+                parsed_ld.append(json.loads(block))
             except json.JSONDecodeError as exc:
                 errors.append(f"{rel}: invalid JSON-LD ({exc.msg} at line {exc.lineno})")
+        types = set()
+        for doc in parsed_ld:
+            types |= schema_types(doc)
+        if rel == "index.html":
+            if "TVSeries" not in types:
+                errors.append(f"{rel}: homepage JSON-LD is missing TVSeries")
+            for node in (n for doc in parsed_ld for n in schema_nodes(doc, "TVEpisode")):
+                episode_url = node.get("url") or ""
+                if "/episode-" not in episode_url or urlsplit(episode_url).hostname != host:
+                    errors.append(f"{rel}: TVEpisode {node.get('name')!r} must link to its own page on {host}")
+        elif re.fullmatch(r"episode-(\d+)/index\.html", rel):
+            number = int(re.fullmatch(r"episode-(\d+)/index\.html", rel).group(1))
+            if not {"TVEpisode", "VideoObject", "BreadcrumbList"} <= types:
+                missing = {"TVEpisode", "VideoObject", "BreadcrumbList"} - types
+                errors.append(f"{rel}: JSON-LD missing {', '.join(sorted(missing))}")
+            episodes = [n for doc in parsed_ld for n in schema_nodes(doc, "TVEpisode")]
+            videos = [n for doc in parsed_ld for n in schema_nodes(doc, "VideoObject")]
+            if len(episodes) != 1 or len(videos) != 1:
+                errors.append(f"{rel}: expected one TVEpisode and one VideoObject")
+            for node in episodes:
+                if node.get("episodeNumber") != number:
+                    errors.append(f"{rel}: TVEpisode episodeNumber is {node.get('episodeNumber')!r}")
+                if node.get("url") != f"https://{host}/episode-{number}/":
+                    errors.append(f"{rel}: TVEpisode url must be the episode canonical URL")
+                if not (node.get("name") and node.get("description")):
+                    errors.append(f"{rel}: TVEpisode needs the on-page name and description")
+            for node in videos:
+                video_url = node.get("url") or ""
+                if not video_url.startswith("https://youtu.be/"):
+                    errors.append(f"{rel}: VideoObject url must be the episode's YouTube URL")
+                if not (node.get("name") and node.get("description") and node.get("thumbnailUrl")):
+                    errors.append(f"{rel}: VideoObject needs name, description, and thumbnailUrl")
+            if p.canonicals and p.canonicals[0] != f"https://{host}/episode-{number}/":
+                errors.append(f"{rel}: canonical must be https://{host}/episode-{number}/")
 
         seen = set()
         for attr, url in p.refs:
@@ -183,6 +289,10 @@ def check(root, host, max_page_kb):
             locs = [el.text.strip() for el in tree.iter() if el.tag.endswith("}loc") and el.text]
             if not locs:
                 errors.append("sitemap.xml lists no URLs")
+            expected = [f"https://{host}/"] + [f"https://{host}/episode-{n}/" for n in range(1, 14)]
+            missing = [loc for loc in expected if loc not in locs]
+            if missing:
+                errors.append("sitemap.xml is missing " + ", ".join(missing))
             for loc in locs:
                 if urlsplit(loc).hostname != host:
                     errors.append(f"sitemap.xml URL {loc!r} is not on {host}")

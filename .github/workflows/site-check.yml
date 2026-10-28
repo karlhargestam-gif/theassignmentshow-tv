@@ -17,3 +17,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: Check page size, canonical URLs, structured data, links, robots and sitemap
         run: python3 .github/scripts/site_check.py --host www.theassignmentshow.tv --max-page-kb 1024
+      - name: Episode pages match the homepage catalog
+        run: python3 .github/scripts/build_episodes.py --check
