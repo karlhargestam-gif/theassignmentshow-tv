@@ -1,3 +1,8 @@
 {
-  "trailingSlash": true
+  "trailingSlash": true,
+  "git": {
+    "deploymentEnabled": {
+      "codex/verified-video-upload-dates": false
+    }
+  }
 }

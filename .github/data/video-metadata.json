@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "datePolicy": "Use the original video publication timestamp, including its supplied timezone. Never substitute this audit date, a site rebuild date, an image date, or a TV air date.",
+  "videos": {
+    "Kv2HmDKY9Jk": {
+      "episode": 1,
+      "thumbnailUrl": "https://missiononeeleven.com/wp-content/uploads/2020/11/open-1-1.png",
+      "thumbnailSource": "https://missiononeeleven.com/the-assignment/",
+      "thumbnailCheckedOn": "2026-10-29",
+      "status": "verified",
+      "sourceUrl": "https://www.youtube.com/watch?v=Kv2HmDKY9Jk",
+      "uploadDate": "2021-07-02T09:24:37-07:00",
+      "sourceFields": {
+        "playerMicroformatRenderer.publishDate": "2021-07-02T09:24:37-07:00",
+        "playerMicroformatRenderer.uploadDate": "2021-07-02T09:24:37-07:00",
+        "meta[itemprop=datePublished]": "2021-07-02T09:24:37-07:00"
+      },
+      "sourceTitle": "The Assignment Episode 1",
+      "channelId": "UCpp2TgO-EiiiPnXgAFa4J5g",
+      "channelName": "Mission One Eleven",
+      "retrievedAt": "2026-10-29T17:21:10.173536+00:00",
+      "sourceSha256": "1b1edaf7fee2a0c885631b895c47d2841b444a6f002ad0c52c2b458c7ad3f076"
+    },
+    "MqkBidv5LRU": {
+      "episode": 2,
+      "thumbnailUrl": "https://missiononeeleven.com/wp-content/uploads/2020/11/Karl-.png",
+      "thumbnailSource": "https://missiononeeleven.com/the-assignment/",
+      "thumbnailCheckedOn": "2026-10-29",
+      "status": "verified",
+      "sourceUrl": "https://www.youtube.com/watch?v=MqkBidv5LRU",
+      "uploadDate": "2021-07-02T09:42:26-07:00",
+      "sourceFields": {
+        "playerMicroformatRenderer.publishDate": "2021-07-02T09:42:26-07:00",
+        "playerMicroformatRenderer.uploadDate": "2021-07-02T09:42:26-07:00",
+        "meta[itemprop=datePublished]": "2021-07-02T09:42:26-07:00"
+      },
+      "sourceTitle": "The Assignment Episode 2",
+      "channelId": "UCpp2TgO-EiiiPnXgAFa4J5g",
+      "channelName": "Mission One Eleven",
+      "retrievedAt": "2026-10-29T17:21:14.539604+00:00",
+      "sourceSha256": "c9ab2e0fc610f8629443ebc87e5d3e7418db272d887c8bf3b1cde3ee371c9703"
+    },
+    "pM91XLRN2CY": {
+      "episode": 3,
+      "thumbnailUrl": "https://missiononeeleven.com/wp-content/uploads/2020/11/helo.png",
+      "thumbnailSource": "https://missiononeeleven.com/the-assignment/",
+      "thumbnailCheckedOn": "2026-10-29",
+      "status": "verified",
+      "sourceUrl": "https://www.youtube.com/watch?v=pM91XLRN2CY",
+      "uploadDate": "2021-07-02T10:02:39-07:00",
+      "sourceFields": {
+        "playerMicroformatRenderer.publishDate": "2021-07-02T10:02:39-07:00",
+        "playerMicroformatRenderer.uploadDate": "2021-07-02T10:02:39-07:00",
+        "meta[itemprop=datePublished]": "2021-07-02T10:02:39-07:00"
+      },
+      "sourceTitle": "The Assignment Episode 3",
+      "channelId": "UCpp2TgO-EiiiPnXgAFa4J5g",
+      "channelName": "Mission One Eleven",
+      "retrievedAt": "2026-10-29T17:21:14.566917+00:00",
+      "sourceSha256": "083166a1dc28739da4df529a6b61212eb5d3fcc77a5821258fbd4e37efe7f5ff"
+    },
+    "_curg73S194": {
+      "episode": 4,
+      "thumbnailUrl": "https://missiononeeleven.com/wp-content/uploads/2020/11/still-.png",
+      "thumbnailSource": "https://missiononeeleven.com/the-assignment/",
+      "thumbnailCheckedOn": "2026-10-29",
+      "status": "unverified",
+      "sourceUrl": "https://www.youtube.com/watch?v=_curg73S194",
+      "reason": "Public YouTube metadata was unavailable during this audit; publisher page supplies no video date. Obtain original publication metadata before adding uploadDate."
+    },
+    "VRdMOGj4HDI": {
+      "episode": 5,
+      "thumbnailUrl": "https://missiononeeleven.com/wp-content/uploads/2020/11/Albertine.png",
+      "thumbnailSource": "https://missiononeeleven.com/the-assignment/",
+      "thumbnailCheckedOn": "2026-10-29",
+      "status": "verified",
+      "sourceUrl": "https://www.youtube.com/watch?v=VRdMOGj4HDI",
+      "uploadDate": "2021-07-07T12:24:03-07:00",
+      "sourceFields": {
+        "playerMicroformatRenderer.publishDate": "2021-07-07T12:24:03-07:00",
+        "playerMicroformatRenderer.uploadDate": "2021-07-07T12:24:03-07:00",
+        "meta[itemprop=datePublished]": "2021-07-07T12:24:03-07:00"
+      },
+      "sourceTitle": "The Assignment Episode 5",
+      "channelId": "UCpp2TgO-EiiiPnXgAFa4J5g",
+      "channelName": "Mission One Eleven",
+      "retrievedAt": "2026-10-29T17:21:14.469651+00:00",
+      "sourceSha256": "3b36ca7c780f743b97b7997a7e63f756f48618aded85b48f28688f59000a15f0"
+    },
+    "5a5uiTjnZLA": {
+      "episode": 6,
+      "thumbnailUrl": "https://missiononeeleven.com/wp-content/uploads/2020/11/Karl-preach.png",
+      "thumbnailSource": "https://missiononeeleven.com/the-assignment/",
+      "thumbnailCheckedOn": "2026-10-29",
+      "status": "unverified",
+      "sourceUrl": "https://www.youtube.com/watch?v=5a5uiTjnZLA",
+      "reason": "Public YouTube metadata was unavailable during this audit; publisher page supplies no video date. Obtain original publication metadata before adding uploadDate."
+    },
+    "2ZElpIsYFDE": {
+      "episode": 7,
+      "thumbnailUrl": "https://missiononeeleven.com/wp-content/uploads/2020/11/The-Assignment-TA-06.mp4.00_13_58_15.Still001.png",
+      "thumbnailSource": "https://missiononeeleven.com/the-assignment/",
+      "thumbnailCheckedOn": "2026-10-29",
+      "status": "unverified",
+      "sourceUrl": "https://www.youtube.com/watch?v=2ZElpIsYFDE",
+      "reason": "Public YouTube metadata was unavailable during this audit; publisher page supplies no video date. Obtain original publication metadata before adding uploadDate."
+    },
+    "P2lYvwMZeDM": {
+      "episode": 8,
+      "thumbnailUrl": "https://missiononeeleven.com/wp-content/uploads/2020/11/stramded.png",
+      "thumbnailSource": "https://missiononeeleven.com/the-assignment/",
+      "thumbnailCheckedOn": "2026-10-29",
+      "status": "unverified",
+      "sourceUrl": "https://www.youtube.com/watch?v=P2lYvwMZeDM",
+      "reason": "Public YouTube metadata was unavailable during this audit; publisher page supplies no video date. Obtain original publication metadata before adding uploadDate."
+    },
+    "kPEKNLH4UhU": {
+      "episode": 9,
+      "thumbnailUrl": "https://missiononeeleven.com/wp-content/uploads/2020/11/praying.png",
+      "thumbnailSource": "https://missiononeeleven.com/the-assignment/",
+      "thumbnailCheckedOn": "2026-10-29",
+      "status": "verified",
+      "sourceUrl": "https://www.youtube.com/watch?v=kPEKNLH4UhU",
+      "uploadDate": "2021-07-07T12:27:19-07:00",
+      "sourceFields": {
+        "playerMicroformatRenderer.publishDate": "2021-07-07T12:27:19-07:00",
+        "playerMicroformatRenderer.uploadDate": "2021-07-07T12:27:19-07:00",
+        "meta[itemprop=datePublished]": "2021-07-07T12:27:19-07:00"
+      },
+      "sourceTitle": "The Assignment Episode 9",
+      "channelId": "UCpp2TgO-EiiiPnXgAFa4J5g",
+      "channelName": "Mission One Eleven",
+      "retrievedAt": "2026-10-29T17:21:17.556182+00:00",
+      "sourceSha256": "48a3f24e4ebaf787176246f56adee689b0304c599e4486a60a408d880cd82e9c"
+    },
+    "0Ae8sbsl-ws": {
+      "episode": 10,
+      "thumbnailUrl": "https://missiononeeleven.com/wp-content/uploads/2020/11/praying-2.png",
+      "thumbnailSource": "https://missiononeeleven.com/the-assignment/",
+      "thumbnailCheckedOn": "2026-10-29",
+      "status": "unverified",
+      "sourceUrl": "https://www.youtube.com/watch?v=0Ae8sbsl-ws",
+      "reason": "Public YouTube metadata was unavailable during this audit; publisher page supplies no video date. Obtain original publication metadata before adding uploadDate."
+    },
+    "Qqhjk7dfmLM": {
+      "episode": 11,
+      "thumbnailUrl": "https://missiononeeleven.com/wp-content/uploads/2020/11/stream.png",
+      "thumbnailSource": "https://missiononeeleven.com/the-assignment/",
+      "thumbnailCheckedOn": "2026-10-29",
+      "status": "unverified",
+      "sourceUrl": "https://www.youtube.com/watch?v=Qqhjk7dfmLM",
+      "reason": "Public YouTube metadata was unavailable during this audit; publisher page supplies no video date. Obtain original publication metadata before adding uploadDate."
+    },
+    "zoDEP70enGM": {
+      "episode": 12,
+      "thumbnailUrl": "https://missiononeeleven.com/wp-content/uploads/2020/11/trespass.png",
+      "thumbnailSource": "https://missiononeeleven.com/the-assignment/",
+      "thumbnailCheckedOn": "2026-10-29",
+      "status": "unverified",
+      "sourceUrl": "https://www.youtube.com/watch?v=zoDEP70enGM",
+      "reason": "Public YouTube metadata was unavailable during this audit; publisher page supplies no video date. Obtain original publication metadata before adding uploadDate."
+    },
+    "3Jg2wFGJ-y4": {
+      "episode": 13,
+      "thumbnailUrl": "https://missiononeeleven.com/wp-content/uploads/2020/11/times-up.png",
+      "thumbnailSource": "https://missiononeeleven.com/the-assignment/",
+      "thumbnailCheckedOn": "2026-10-29",
+      "status": "unverified",
+      "sourceUrl": "https://www.youtube.com/watch?v=3Jg2wFGJ-y4",
+      "reason": "Public YouTube metadata was unavailable during this audit; publisher page supplies no video date. Obtain original publication metadata before adding uploadDate."
+    }
+  }
+}

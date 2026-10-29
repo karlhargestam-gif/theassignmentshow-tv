@@ -21,6 +21,7 @@ import sys
 import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
 from urllib.parse import unquote, urlsplit
+from video_metadata import load_video_metadata
 
 SKIP_DIRS = {".git", "node_modules", ".github", ".vercel"}
 INLINE_IMAGE_LIMIT = 100 * 1024  # base64 chars
@@ -166,9 +167,14 @@ def exists_as_page(target):
     return os.path.isfile(target.rstrip("/") + ".html")  # cleanUrls
 
 
-def check(root, host, max_page_kb):
+def check(root, host, max_page_kb, require_video_dates=False):
     errors, warnings = [], []
     root = os.path.abspath(root)
+    try:
+        video_metadata = load_video_metadata(root)
+    except (OSError, ValueError, TypeError) as exc:
+        errors.append(f"video metadata evidence is invalid: {exc}")
+        video_metadata = {}
     pages = sorted(html_files(root))
     titles = {}
     if not pages:
@@ -254,6 +260,23 @@ def check(root, host, max_page_kb):
                     errors.append(f"{rel}: VideoObject url must be the episode's YouTube URL")
                 if not (node.get("name") and node.get("description") and node.get("thumbnailUrl")):
                     errors.append(f"{rel}: VideoObject needs name, description, and thumbnailUrl")
+                video_id = video_url.rsplit("/", 1)[-1]
+                evidence = video_metadata.get(video_id)
+                if not evidence or evidence.get("episode") != number:
+                    errors.append(f"{rel}: VideoObject does not match episode source evidence")
+                    continue
+                if node.get("embedUrl") != f"https://www.youtube.com/embed/{video_id}":
+                    errors.append(f"{rel}: embedUrl does not match the episode video")
+                if node.get("thumbnailUrl") != evidence["thumbnailUrl"]:
+                    errors.append(f"{rel}: thumbnailUrl does not match the publisher's episode image")
+                if evidence["status"] == "verified":
+                    if node.get("uploadDate") != evidence["uploadDate"]:
+                        errors.append(f"{rel}: uploadDate missing or differs from verified source")
+                else:
+                    if "uploadDate" in node:
+                        errors.append(f"{rel}: uploadDate has no verified source")
+                    message = f"{rel}: missing uploadDate; authoritative date unresolved ({video_id})"
+                    (errors if require_video_dates else warnings).append(message)
             if p.canonicals and p.canonicals[0] != f"https://{host}/episode-{number}/":
                 errors.append(f"{rel}: canonical must be https://{host}/episode-{number}/")
 
@@ -311,9 +334,11 @@ def main():
     ap.add_argument("--host", required=True, help="canonical host, e.g. www.example.com")
     ap.add_argument("--root", default=".")
     ap.add_argument("--max-page-kb", type=int, default=1024)
+    ap.add_argument("--require-video-dates", action="store_true",
+                    help="fail on unresolved video dates; required before publication")
     args = ap.parse_args()
 
-    pages, errors, warnings = check(args.root, args.host, args.max_page_kb)
+    pages, errors, warnings = check(args.root, args.host, args.max_page_kb, args.require_video_dates)
     for w in warnings:
         print(f"warning: {w}")
     for e in errors:
