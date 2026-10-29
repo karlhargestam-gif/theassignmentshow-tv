@@ -15,7 +15,9 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
-      - name: Check page size, canonical URLs, structured data, links, robots and sitemap
-        run: python3 .github/scripts/site_check.py --host www.theassignmentshow.tv --max-page-kb 1024
+      - name: Video metadata regression tests
+        run: python3 -m unittest discover -s .github/scripts -p 'test_*.py'
       - name: Episode pages match the homepage catalog
         run: python3 .github/scripts/build_episodes.py --check
+      - name: Check site quality, sitemap and complete verified video dates
+        run: python3 .github/scripts/site_check.py --host www.theassignmentshow.tv --max-page-kb 1024 --require-video-dates

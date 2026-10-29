@@ -1,0 +1,166 @@
+{
+  "observedAt": "2026-10-29T19:08:49.686Z",
+  "method": "Read canonical, title, channel links, and datePublished/uploadDate meta tags from the original public YouTube watch-page DOM.",
+  "records": [
+    {
+      "canonical": "https://www.youtube.com/watch?v=_curg73S194",
+      "channel": [
+        {
+          "href": "/@missiononeeleven2447",
+          "name": "Mission One Eleven"
+        },
+        {
+          "href": "/@missiononeeleven2447",
+          "name": "Mission One Eleven\n    \n      103 subscribers"
+        },
+        {
+          "href": "/@missiononeeleven2447",
+          "name": "Mission One Eleven\n    \n      103 subscribers"
+        }
+      ],
+      "published": "2021-07-02T13:10:30-07:00",
+      "title": "The Assignment Episode 4 - YouTube",
+      "uploaded": "2021-07-02T13:10:30-07:00"
+    },
+    {
+      "canonical": "https://www.youtube.com/watch?v=5a5uiTjnZLA",
+      "channel": [
+        {
+          "href": "/@missiononeeleven2447",
+          "name": "Mission One Eleven"
+        },
+        {
+          "href": "/@missiononeeleven2447",
+          "name": "Mission One Eleven\n    \n      103 subscribers"
+        },
+        {
+          "href": "/@missiononeeleven2447",
+          "name": "Mission One Eleven\n    \n      103 subscribers"
+        }
+      ],
+      "published": "2021-07-07T12:22:32-07:00",
+      "title": "The Assignment Episode 6 - YouTube",
+      "uploaded": "2021-07-07T12:22:32-07:00"
+    },
+    {
+      "canonical": "https://www.youtube.com/watch?v=2ZElpIsYFDE",
+      "channel": [
+        {
+          "href": "/@missiononeeleven2447",
+          "name": "Mission One Eleven"
+        },
+        {
+          "href": "/@missiononeeleven2447",
+          "name": "Mission One Eleven\n    \n      103 subscribers"
+        },
+        {
+          "href": "/@missiononeeleven2447",
+          "name": "Mission One Eleven\n    \n      103 subscribers"
+        }
+      ],
+      "published": "2021-07-07T12:28:22-07:00",
+      "title": "The Assignment Episode 7 - YouTube",
+      "uploaded": "2021-07-07T12:28:22-07:00"
+    },
+    {
+      "canonical": "https://www.youtube.com/watch?v=P2lYvwMZeDM",
+      "channel": [
+        {
+          "href": "/@missiononeeleven2447",
+          "name": "Mission One Eleven"
+        },
+        {
+          "href": "/@missiononeeleven2447",
+          "name": "Mission One Eleven\n    \n      103 subscribers"
+        },
+        {
+          "href": "/@missiononeeleven2447",
+          "name": "Mission One Eleven\n    \n      103 subscribers"
+        }
+      ],
+      "published": "2021-07-07T12:25:22-07:00",
+      "title": "The Assignment Episode 8 - YouTube",
+      "uploaded": "2021-07-07T12:25:22-07:00"
+    },
+    {
+      "canonical": "https://www.youtube.com/watch?v=0Ae8sbsl-ws",
+      "channel": [
+        {
+          "href": "/@missiononeeleven2447",
+          "name": "Mission One Eleven"
+        },
+        {
+          "href": "/@missiononeeleven2447",
+          "name": "Mission One Eleven\n    \n      103 subscribers"
+        },
+        {
+          "href": "/@missiononeeleven2447",
+          "name": "Mission One Eleven\n    \n      103 subscribers"
+        }
+      ],
+      "published": "2021-07-06T18:54:57-07:00",
+      "title": "The Assignment Episode 10 - YouTube",
+      "uploaded": "2021-07-06T18:54:57-07:00"
+    },
+    {
+      "canonical": "https://www.youtube.com/watch?v=Qqhjk7dfmLM",
+      "channel": [
+        {
+          "href": "/@missiononeeleven2447",
+          "name": "Mission One Eleven"
+        },
+        {
+          "href": "/@missiononeeleven2447",
+          "name": "Mission One Eleven\n    \n      103 subscribers"
+        },
+        {
+          "href": "/@missiononeeleven2447",
+          "name": "Mission One Eleven\n    \n      103 subscribers"
+        }
+      ],
+      "published": "2021-07-07T08:30:41-07:00",
+      "title": "The Assignment Episode 11 - YouTube",
+      "uploaded": "2021-07-07T08:30:41-07:00"
+    },
+    {
+      "canonical": "https://www.youtube.com/watch?v=zoDEP70enGM",
+      "channel": [
+        {
+          "href": "/@missiononeeleven2447",
+          "name": "Mission One Eleven"
+        },
+        {
+          "href": "/@missiononeeleven2447",
+          "name": "Mission One Eleven\n    \n      103 subscribers"
+        },
+        {
+          "href": "/@missiononeeleven2447",
+          "name": "Mission One Eleven\n    \n      103 subscribers"
+        }
+      ],
+      "published": "2021-07-07T08:33:21-07:00",
+      "title": "The Assignment Episode 12 - YouTube",
+      "uploaded": "2021-07-07T08:33:21-07:00"
+    },
+    {
+      "canonical": "https://www.youtube.com/watch?v=3Jg2wFGJ-y4",
+      "channel": [
+        {
+          "href": "/@missiononeeleven2447",
+          "name": "Mission One Eleven"
+        },
+        {
+          "href": "/@missiononeeleven2447",
+          "name": "Mission One Eleven\n    \n      103 subscribers"
+        },
+        {
+          "href": "/@missiononeeleven2447",
+          "name": "Mission One Eleven\n    \n      103 subscribers"
+        }
+      ],
+      "published": "2021-07-07T08:34:43-07:00",
+      "title": "The Assignment Episode 13 - YouTube",
+      "uploaded": "2021-07-07T08:34:43-07:00"
+    }
+  ]
+}

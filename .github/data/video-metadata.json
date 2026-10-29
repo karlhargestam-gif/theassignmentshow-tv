@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 1,
+  "datePolicy": "Use the original video publication timestamp, including its supplied timezone. Never substitute this audit date, a site rebuild date, an image date, or a TV air date.",
+  "videos": {
+    "Kv2HmDKY9Jk": {
+      "episode": 1,
+      "thumbnailUrl": "https://missiononeeleven.com/wp-content/uploads/2020/11/open-1-1.png",
+      "thumbnailSource": "https://missiononeeleven.com/the-assignment/",
+      "thumbnailCheckedOn": "2026-10-29",
+      "status": "verified",
+      "sourceUrl": "https://www.youtube.com/watch?v=Kv2HmDKY9Jk",
+      "uploadDate": "2021-07-02T09:24:37-07:00",
+      "sourceFields": {
+        "playerMicroformatRenderer.publishDate": "2021-07-02T09:24:37-07:00",
+        "playerMicroformatRenderer.uploadDate": "2021-07-02T09:24:37-07:00",
+        "meta[itemprop=datePublished]": "2021-07-02T09:24:37-07:00"
+      },
+      "sourceTitle": "The Assignment Episode 1",
+      "channelId": "UCpp2TgO-EiiiPnXgAFa4J5g",
+      "channelName": "Mission One Eleven",
+      "retrievedAt": "2026-10-29T17:21:10.173536+00:00",
+      "sourceSha256": "1b1edaf7fee2a0c885631b895c47d2841b444a6f002ad0c52c2b458c7ad3f076",
+      "evidenceType": "youtube-watch-page-response",
+      "sourceHashScope": "original-watch-page-http-response"
+    },
+    "MqkBidv5LRU": {
+      "episode": 2,
+      "thumbnailUrl": "https://missiononeeleven.com/wp-content/uploads/2020/11/Karl-.png",
+      "thumbnailSource": "https://missiononeeleven.com/the-assignment/",
+      "thumbnailCheckedOn": "2026-10-29",
+      "status": "verified",
+      "sourceUrl": "https://www.youtube.com/watch?v=MqkBidv5LRU",
+      "uploadDate": "2021-07-02T09:42:26-07:00",
+      "sourceFields": {
+        "playerMicroformatRenderer.publishDate": "2021-07-02T09:42:26-07:00",
+        "playerMicroformatRenderer.uploadDate": "2021-07-02T09:42:26-07:00",
+        "meta[itemprop=datePublished]": "2021-07-02T09:42:26-07:00"
+      },
+      "sourceTitle": "The Assignment Episode 2",
+      "channelId": "UCpp2TgO-EiiiPnXgAFa4J5g",
+      "channelName": "Mission One Eleven",
+      "retrievedAt": "2026-10-29T17:21:14.539604+00:00",
+      "sourceSha256": "c9ab2e0fc610f8629443ebc87e5d3e7418db272d887c8bf3b1cde3ee371c9703",
+      "evidenceType": "youtube-watch-page-response",
+      "sourceHashScope": "original-watch-page-http-response"
+    },
+    "pM91XLRN2CY": {
+      "episode": 3,
+      "thumbnailUrl": "https://missiononeeleven.com/wp-content/uploads/2020/11/helo.png",
+      "thumbnailSource": "https://missiononeeleven.com/the-assignment/",
+      "thumbnailCheckedOn": "2026-10-29",
+      "status": "verified",
+      "sourceUrl": "https://www.youtube.com/watch?v=pM91XLRN2CY",
+      "uploadDate": "2021-07-02T10:02:39-07:00",
+      "sourceFields": {
+        "playerMicroformatRenderer.publishDate": "2021-07-02T10:02:39-07:00",
+        "playerMicroformatRenderer.uploadDate": "2021-07-02T10:02:39-07:00",
+        "meta[itemprop=datePublished]": "2021-07-02T10:02:39-07:00"
+      },
+      "sourceTitle": "The Assignment Episode 3",
+      "channelId": "UCpp2TgO-EiiiPnXgAFa4J5g",
+      "channelName": "Mission One Eleven",
+      "retrievedAt": "2026-10-29T17:21:14.566917+00:00",
+      "sourceSha256": "083166a1dc28739da4df529a6b61212eb5d3fcc77a5821258fbd4e37efe7f5ff",
+      "evidenceType": "youtube-watch-page-response",
+      "sourceHashScope": "original-watch-page-http-response"
+    },
+    "_curg73S194": {
+      "episode": 4,
+      "thumbnailUrl": "https://missiononeeleven.com/wp-content/uploads/2020/11/still-.png",
+      "thumbnailSource": "https://missiononeeleven.com/the-assignment/",
+      "thumbnailCheckedOn": "2026-10-29",
+      "status": "verified",
+      "sourceUrl": "https://www.youtube.com/watch?v=_curg73S194",
+      "uploadDate": "2021-07-02T13:10:30-07:00",
+      "sourceFields": {
+        "meta[itemprop=datePublished]": "2021-07-02T13:10:30-07:00",
+        "meta[itemprop=uploadDate]": "2021-07-02T13:10:30-07:00"
+      },
+      "sourceTitle": "The Assignment Episode 4",
+      "channelUrl": "https://www.youtube.com/@missiononeeleven2447",
+      "channelName": "Mission One Eleven",
+      "evidenceType": "youtube-watch-page-dom",
+      "retrievedAt": "2026-10-29T19:08:49.686Z",
+      "sourceSha256": "e16ffe4f7b2ac2c0ba2fffdd476ac496593db6da0019eaa0e4340c3e55535a58",
+      "sourceHashScope": "canonical-json-dom-evidence-record",
+      "evidencePath": ".github/reports/youtube-dom-evidence-2026-10-29.json"
+    },
+    "VRdMOGj4HDI": {
+      "episode": 5,
+      "thumbnailUrl": "https://missiononeeleven.com/wp-content/uploads/2020/11/Albertine.png",
+      "thumbnailSource": "https://missiononeeleven.com/the-assignment/",
+      "thumbnailCheckedOn": "2026-10-29",
+      "status": "verified",
+      "sourceUrl": "https://www.youtube.com/watch?v=VRdMOGj4HDI",
+      "uploadDate": "2021-07-07T12:24:03-07:00",
+      "sourceFields": {
+        "playerMicroformatRenderer.publishDate": "2021-07-07T12:24:03-07:00",
+        "playerMicroformatRenderer.uploadDate": "2021-07-07T12:24:03-07:00",
+        "meta[itemprop=datePublished]": "2021-07-07T12:24:03-07:00"
+      },
+      "sourceTitle": "The Assignment Episode 5",
+      "channelId": "UCpp2TgO-EiiiPnXgAFa4J5g",
+      "channelName": "Mission One Eleven",
+      "retrievedAt": "2026-10-29T17:21:14.469651+00:00",
+      "sourceSha256": "3b36ca7c780f743b97b7997a7e63f756f48618aded85b48f28688f59000a15f0",
+      "evidenceType": "youtube-watch-page-response",
+      "sourceHashScope": "original-watch-page-http-response"
+    },
+    "5a5uiTjnZLA": {
+      "episode": 6,
+      "thumbnailUrl": "https://missiononeeleven.com/wp-content/uploads/2020/11/Karl-preach.png",
+      "thumbnailSource": "https://missiononeeleven.com/the-assignment/",
+      "thumbnailCheckedOn": "2026-10-29",
+      "status": "verified",
+      "sourceUrl": "https://www.youtube.com/watch?v=5a5uiTjnZLA",
+      "uploadDate": "2021-07-07T12:22:32-07:00",
+      "sourceFields": {
+        "meta[itemprop=datePublished]": "2021-07-07T12:22:32-07:00",
+        "meta[itemprop=uploadDate]": "2021-07-07T12:22:32-07:00"
+      },
+      "sourceTitle": "The Assignment Episode 6",
+      "channelUrl": "https://www.youtube.com/@missiononeeleven2447",
+      "channelName": "Mission One Eleven",
+      "evidenceType": "youtube-watch-page-dom",
+      "retrievedAt": "2026-10-29T19:08:49.686Z",
+      "sourceSha256": "2324b6babfaa1999e58e878dc70123c2d102ad6fecf15af80a855d1cf648eef5",
+      "sourceHashScope": "canonical-json-dom-evidence-record",
+      "evidencePath": ".github/reports/youtube-dom-evidence-2026-10-29.json"
+    },
+    "2ZElpIsYFDE": {
+      "episode": 7,
+      "thumbnailUrl": "https://missiononeeleven.com/wp-content/uploads/2020/11/The-Assignment-TA-06.mp4.00_13_58_15.Still001.png",
+      "thumbnailSource": "https://missiononeeleven.com/the-assignment/",
+      "thumbnailCheckedOn": "2026-10-29",
+      "status": "verified",
+      "sourceUrl": "https://www.youtube.com/watch?v=2ZElpIsYFDE",
+      "uploadDate": "2021-07-07T12:28:22-07:00",
+      "sourceFields": {
+        "meta[itemprop=datePublished]": "2021-07-07T12:28:22-07:00",
+        "meta[itemprop=uploadDate]": "2021-07-07T12:28:22-07:00"
+      },
+      "sourceTitle": "The Assignment Episode 7",
+      "channelUrl": "https://www.youtube.com/@missiononeeleven2447",
+      "channelName": "Mission One Eleven",
+      "evidenceType": "youtube-watch-page-dom",
+      "retrievedAt": "2026-10-29T19:08:49.686Z",
+      "sourceSha256": "4ea4bd09de3cb406c2d998d79ae45007f1e0689f17780c6ecc3214c41a83ce06",
+      "sourceHashScope": "canonical-json-dom-evidence-record",
+      "evidencePath": ".github/reports/youtube-dom-evidence-2026-10-29.json"
+    },
+    "P2lYvwMZeDM": {
+      "episode": 8,
+      "thumbnailUrl": "https://missiononeeleven.com/wp-content/uploads/2020/11/stramded.png",
+      "thumbnailSource": "https://missiononeeleven.com/the-assignment/",
+      "thumbnailCheckedOn": "2026-10-29",
+      "status": "verified",
+      "sourceUrl": "https://www.youtube.com/watch?v=P2lYvwMZeDM",
+      "uploadDate": "2021-07-07T12:25:22-07:00",
+      "sourceFields": {
+        "meta[itemprop=datePublished]": "2021-07-07T12:25:22-07:00",
+        "meta[itemprop=uploadDate]": "2021-07-07T12:25:22-07:00"
+      },
+      "sourceTitle": "The Assignment Episode 8",
+      "channelUrl": "https://www.youtube.com/@missiononeeleven2447",
+      "channelName": "Mission One Eleven",
+      "evidenceType": "youtube-watch-page-dom",
+      "retrievedAt": "2026-10-29T19:08:49.686Z",
+      "sourceSha256": "58ff9d13bc9db435133d685c41d6f2b2513a274777d6f417545148c5584c352b",
+      "sourceHashScope": "canonical-json-dom-evidence-record",
+      "evidencePath": ".github/reports/youtube-dom-evidence-2026-10-29.json"
+    },
+    "kPEKNLH4UhU": {
+      "episode": 9,
+      "thumbnailUrl": "https://missiononeeleven.com/wp-content/uploads/2020/11/praying.png",
+      "thumbnailSource": "https://missiononeeleven.com/the-assignment/",
+      "thumbnailCheckedOn": "2026-10-29",
+      "status": "verified",
+      "sourceUrl": "https://www.youtube.com/watch?v=kPEKNLH4UhU",
+      "uploadDate": "2021-07-07T12:27:19-07:00",
+      "sourceFields": {
+        "playerMicroformatRenderer.publishDate": "2021-07-07T12:27:19-07:00",
+        "playerMicroformatRenderer.uploadDate": "2021-07-07T12:27:19-07:00",
+        "meta[itemprop=datePublished]": "2021-07-07T12:27:19-07:00"
+      },
+      "sourceTitle": "The Assignment Episode 9",
+      "channelId": "UCpp2TgO-EiiiPnXgAFa4J5g",
+      "channelName": "Mission One Eleven",
+      "retrievedAt": "2026-10-29T17:21:17.556182+00:00",
+      "sourceSha256": "48a3f24e4ebaf787176246f56adee689b0304c599e4486a60a408d880cd82e9c",
+      "evidenceType": "youtube-watch-page-response",
+      "sourceHashScope": "original-watch-page-http-response"
+    },
+    "0Ae8sbsl-ws": {
+      "episode": 10,
+      "thumbnailUrl": "https://missiononeeleven.com/wp-content/uploads/2020/11/praying-2.png",
+      "thumbnailSource": "https://missiononeeleven.com/the-assignment/",
+      "thumbnailCheckedOn": "2026-10-29",
+      "status": "verified",
+      "sourceUrl": "https://www.youtube.com/watch?v=0Ae8sbsl-ws",
+      "uploadDate": "2021-07-06T18:54:57-07:00",
+      "sourceFields": {
+        "meta[itemprop=datePublished]": "2021-07-06T18:54:57-07:00",
+        "meta[itemprop=uploadDate]": "2021-07-06T18:54:57-07:00"
+      },
+      "sourceTitle": "The Assignment Episode 10",
+      "channelUrl": "https://www.youtube.com/@missiononeeleven2447",
+      "channelName": "Mission One Eleven",
+      "evidenceType": "youtube-watch-page-dom",
+      "retrievedAt": "2026-10-29T19:08:49.686Z",
+      "sourceSha256": "3a41c29d8260872b8e8f0ad4bae0b27737503beed87df3e2d12ec0cecacdd2fd",
+      "sourceHashScope": "canonical-json-dom-evidence-record",
+      "evidencePath": ".github/reports/youtube-dom-evidence-2026-10-29.json"
+    },
+    "Qqhjk7dfmLM": {
+      "episode": 11,
+      "thumbnailUrl": "https://missiononeeleven.com/wp-content/uploads/2020/11/stream.png",
+      "thumbnailSource": "https://missiononeeleven.com/the-assignment/",
+      "thumbnailCheckedOn": "2026-10-29",
+      "status": "verified",
+      "sourceUrl": "https://www.youtube.com/watch?v=Qqhjk7dfmLM",
+      "uploadDate": "2021-07-07T08:30:41-07:00",
+      "sourceFields": {
+        "meta[itemprop=datePublished]": "2021-07-07T08:30:41-07:00",
+        "meta[itemprop=uploadDate]": "2021-07-07T08:30:41-07:00"
+      },
+      "sourceTitle": "The Assignment Episode 11",
+      "channelUrl": "https://www.youtube.com/@missiononeeleven2447",
+      "channelName": "Mission One Eleven",
+      "evidenceType": "youtube-watch-page-dom",
+      "retrievedAt": "2026-10-29T19:08:49.686Z",
+      "sourceSha256": "4d931f09700fc0c533805dc6d0600aa22af5071c46b73f0f1862163c8f131b2e",
+      "sourceHashScope": "canonical-json-dom-evidence-record",
+      "evidencePath": ".github/reports/youtube-dom-evidence-2026-10-29.json"
+    },
+    "zoDEP70enGM": {
+      "episode": 12,
+      "thumbnailUrl": "https://missiononeeleven.com/wp-content/uploads/2020/11/trespass.png",
+      "thumbnailSource": "https://missiononeeleven.com/the-assignment/",
+      "thumbnailCheckedOn": "2026-10-29",
+      "status": "verified",
+      "sourceUrl": "https://www.youtube.com/watch?v=zoDEP70enGM",
+      "uploadDate": "2021-07-07T08:33:21-07:00",
+      "sourceFields": {
+        "meta[itemprop=datePublished]": "2021-07-07T08:33:21-07:00",
+        "meta[itemprop=uploadDate]": "2021-07-07T08:33:21-07:00"
+      },
+      "sourceTitle": "The Assignment Episode 12",
+      "channelUrl": "https://www.youtube.com/@missiononeeleven2447",
+      "channelName": "Mission One Eleven",
+      "evidenceType": "youtube-watch-page-dom",
+      "retrievedAt": "2026-10-29T19:08:49.686Z",
+      "sourceSha256": "bef6d902345d2d5caf8fd52f2f67aa3958c001390d5648013091c3d752e34dc5",
+      "sourceHashScope": "canonical-json-dom-evidence-record",
+      "evidencePath": ".github/reports/youtube-dom-evidence-2026-10-29.json"
+    },
+    "3Jg2wFGJ-y4": {
+      "episode": 13,
+      "thumbnailUrl": "https://missiononeeleven.com/wp-content/uploads/2020/11/times-up.png",
+      "thumbnailSource": "https://missiononeeleven.com/the-assignment/",
+      "thumbnailCheckedOn": "2026-10-29",
+      "status": "verified",
+      "sourceUrl": "https://www.youtube.com/watch?v=3Jg2wFGJ-y4",
+      "uploadDate": "2021-07-07T08:34:43-07:00",
+      "sourceFields": {
+        "meta[itemprop=datePublished]": "2021-07-07T08:34:43-07:00",
+        "meta[itemprop=uploadDate]": "2021-07-07T08:34:43-07:00"
+      },
+      "sourceTitle": "The Assignment Episode 13",
+      "channelUrl": "https://www.youtube.com/@missiononeeleven2447",
+      "channelName": "Mission One Eleven",
+      "evidenceType": "youtube-watch-page-dom",
+      "retrievedAt": "2026-10-29T19:08:49.686Z",
+      "sourceSha256": "04ae264b52c7f536e24ad8b31f50c617ac8b4f145eb2f429a8da10ab6743870a",
+      "sourceHashScope": "canonical-json-dom-evidence-record",
+      "evidencePath": ".github/reports/youtube-dom-evidence-2026-10-29.json"
+    }
+  }
+}

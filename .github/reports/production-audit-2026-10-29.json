@@ -1,0 +1,252 @@
+[
+  {
+    "url": "https://www.theassignmentshow.tv/",
+    "final_url": "https://www.theassignmentshow.tv/",
+    "status": 200,
+    "repo_path": "index.html",
+    "matches_main": true,
+    "sha256": "4c0eea085d650ef49672278a7da5bc80c550005c1a71366ff6d7436bb372f21c",
+    "upload_dates": [],
+    "video_count": 0,
+    "iframes": 0,
+    "server": null,
+    "x_robots_tag": null,
+    "checked_at": "2026-10-29T17:21:25.213456+00:00"
+  },
+  {
+    "url": "https://www.theassignmentshow.tv/episode-1/",
+    "final_url": "https://www.theassignmentshow.tv/episode-1/",
+    "status": 200,
+    "repo_path": "episode-1/index.html",
+    "matches_main": true,
+    "sha256": "93f4521796e6ac37213683940dac1546d84710c94a1649a6c216c9ada1e0ee86",
+    "upload_dates": [
+      null
+    ],
+    "video_count": 1,
+    "iframes": 0,
+    "server": null,
+    "x_robots_tag": null,
+    "checked_at": "2026-10-29T17:21:25.157734+00:00"
+  },
+  {
+    "url": "https://www.theassignmentshow.tv/episode-2/",
+    "final_url": "https://www.theassignmentshow.tv/episode-2/",
+    "status": 200,
+    "repo_path": "episode-2/index.html",
+    "matches_main": true,
+    "sha256": "2cc708899dfade20eb39de0c82c991b733b40301c00dcdd42d76ef04862d9d72",
+    "upload_dates": [
+      null
+    ],
+    "video_count": 1,
+    "iframes": 0,
+    "server": null,
+    "x_robots_tag": null,
+    "checked_at": "2026-10-29T17:21:25.161242+00:00"
+  },
+  {
+    "url": "https://www.theassignmentshow.tv/episode-3/",
+    "final_url": "https://www.theassignmentshow.tv/episode-3/",
+    "status": 200,
+    "repo_path": "episode-3/index.html",
+    "matches_main": true,
+    "sha256": "53feb614c426004929de16b55fd763466657154d113c6e15d9ee7acc5b117fc1",
+    "upload_dates": [
+      null
+    ],
+    "video_count": 1,
+    "iframes": 0,
+    "server": null,
+    "x_robots_tag": null,
+    "checked_at": "2026-10-29T17:21:25.089871+00:00"
+  },
+  {
+    "url": "https://www.theassignmentshow.tv/episode-4/",
+    "final_url": "https://www.theassignmentshow.tv/episode-4/",
+    "status": 200,
+    "repo_path": "episode-4/index.html",
+    "matches_main": true,
+    "sha256": "edba0942f2ef1fd4c8187aaf210ab053eac8214045a2833fc47e824fc447f11c",
+    "upload_dates": [
+      null
+    ],
+    "video_count": 1,
+    "iframes": 0,
+    "server": null,
+    "x_robots_tag": null,
+    "checked_at": "2026-10-29T17:21:28.274301+00:00"
+  },
+  {
+    "url": "https://www.theassignmentshow.tv/episode-5/",
+    "final_url": "https://www.theassignmentshow.tv/episode-5/",
+    "status": 200,
+    "repo_path": "episode-5/index.html",
+    "matches_main": true,
+    "sha256": "6f21f22b417ae109377b55ec888e8b2e6edc3f04012872105622e6dece764f6b",
+    "upload_dates": [
+      null
+    ],
+    "video_count": 1,
+    "iframes": 0,
+    "server": null,
+    "x_robots_tag": null,
+    "checked_at": "2026-10-29T17:21:28.273452+00:00"
+  },
+  {
+    "url": "https://www.theassignmentshow.tv/episode-6/",
+    "final_url": "https://www.theassignmentshow.tv/episode-6/",
+    "status": 200,
+    "repo_path": "episode-6/index.html",
+    "matches_main": true,
+    "sha256": "c616433279f9630d9c134ab03c0cb1e0bec3fd3cadf56c75902a2ab96810b47c",
+    "upload_dates": [
+      null
+    ],
+    "video_count": 1,
+    "iframes": 0,
+    "server": null,
+    "x_robots_tag": null,
+    "checked_at": "2026-10-29T17:21:28.205739+00:00"
+  },
+  {
+    "url": "https://www.theassignmentshow.tv/episode-7/",
+    "final_url": "https://www.theassignmentshow.tv/episode-7/",
+    "status": 200,
+    "repo_path": "episode-7/index.html",
+    "matches_main": true,
+    "sha256": "00bf135c19bb2e321329e67e7a65f4bbf9f989302a4bbc39a0b4220f618b7089",
+    "upload_dates": [
+      null
+    ],
+    "video_count": 1,
+    "iframes": 0,
+    "server": null,
+    "x_robots_tag": null,
+    "checked_at": "2026-10-29T17:21:28.261684+00:00"
+  },
+  {
+    "url": "https://www.theassignmentshow.tv/episode-8/",
+    "final_url": "https://www.theassignmentshow.tv/episode-8/",
+    "status": 200,
+    "repo_path": "episode-8/index.html",
+    "matches_main": true,
+    "sha256": "2fac645aab4b9d57ddd28d7e74ce27af47cd81725a064cb5bd359b65b4bdb4db",
+    "upload_dates": [
+      null
+    ],
+    "video_count": 1,
+    "iframes": 0,
+    "server": null,
+    "x_robots_tag": null,
+    "checked_at": "2026-10-29T17:21:31.089218+00:00"
+  },
+  {
+    "url": "https://www.theassignmentshow.tv/episode-9/",
+    "final_url": "https://www.theassignmentshow.tv/episode-9/",
+    "status": 200,
+    "repo_path": "episode-9/index.html",
+    "matches_main": true,
+    "sha256": "06b738c90a5f2910c27107ce0d77df88b87175e14c9dee003dfa6815b3a0fb7e",
+    "upload_dates": [
+      null
+    ],
+    "video_count": 1,
+    "iframes": 0,
+    "server": null,
+    "x_robots_tag": null,
+    "checked_at": "2026-10-29T17:21:31.129667+00:00"
+  },
+  {
+    "url": "https://www.theassignmentshow.tv/episode-10/",
+    "final_url": "https://www.theassignmentshow.tv/episode-10/",
+    "status": 200,
+    "repo_path": "episode-10/index.html",
+    "matches_main": true,
+    "sha256": "386694939498c987bb1c56e7c2e89d2b7777531ef1e73af50110e177c4de6e79",
+    "upload_dates": [
+      null
+    ],
+    "video_count": 1,
+    "iframes": 0,
+    "server": null,
+    "x_robots_tag": null,
+    "checked_at": "2026-10-29T17:21:31.085693+00:00"
+  },
+  {
+    "url": "https://www.theassignmentshow.tv/episode-11/",
+    "final_url": "https://www.theassignmentshow.tv/episode-11/",
+    "status": 200,
+    "repo_path": "episode-11/index.html",
+    "matches_main": true,
+    "sha256": "81f734805914e26d37710c7b3c360397fc782fab548ff6e35c3e5c1d1eea1caf",
+    "upload_dates": [
+      null
+    ],
+    "video_count": 1,
+    "iframes": 0,
+    "server": null,
+    "x_robots_tag": null,
+    "checked_at": "2026-10-29T17:21:31.042036+00:00"
+  },
+  {
+    "url": "https://www.theassignmentshow.tv/episode-12/",
+    "final_url": "https://www.theassignmentshow.tv/episode-12/",
+    "status": 200,
+    "repo_path": "episode-12/index.html",
+    "matches_main": true,
+    "sha256": "52457fb901c2ef9a9488213876af8bf213747ca37a2c589a09f43a64ab93db08",
+    "upload_dates": [
+      null
+    ],
+    "video_count": 1,
+    "iframes": 0,
+    "server": null,
+    "x_robots_tag": null,
+    "checked_at": "2026-10-29T17:21:34.573255+00:00"
+  },
+  {
+    "url": "https://www.theassignmentshow.tv/episode-13/",
+    "final_url": "https://www.theassignmentshow.tv/episode-13/",
+    "status": 200,
+    "repo_path": "episode-13/index.html",
+    "matches_main": true,
+    "sha256": "d6fddbc0e92c4c6469aaa31eef21e467c2da975a90b278bbe83eee096a4b7ffa",
+    "upload_dates": [
+      null
+    ],
+    "video_count": 1,
+    "iframes": 0,
+    "server": null,
+    "x_robots_tag": null,
+    "checked_at": "2026-10-29T17:21:34.641171+00:00"
+  },
+  {
+    "url": "https://www.theassignmentshow.tv/sitemap.xml",
+    "final_url": "https://www.theassignmentshow.tv/sitemap.xml",
+    "status": 200,
+    "repo_path": "sitemap.xml",
+    "matches_main": true,
+    "sha256": "1bea0e40e1d815a8f4cbf22babe74fe28cb401895cd964f7d0449b448e1b1ccf",
+    "upload_dates": [],
+    "video_count": 0,
+    "iframes": 0,
+    "server": null,
+    "x_robots_tag": null,
+    "checked_at": "2026-10-29T17:21:34.562412+00:00"
+  },
+  {
+    "url": "https://www.theassignmentshow.tv/robots.txt",
+    "final_url": "https://www.theassignmentshow.tv/robots.txt",
+    "status": 200,
+    "repo_path": "robots.txt",
+    "matches_main": true,
+    "sha256": "f38c22130e73d3a422fe20443520d60be96d88397c4966ae5bd31aa112c661f9",
+    "upload_dates": [],
+    "video_count": 0,
+    "iframes": 0,
+    "server": null,
+    "x_robots_tag": null,
+    "checked_at": "2026-10-29T17:21:34.630243+00:00"
+  }
+]

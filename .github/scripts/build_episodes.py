@@ -3,8 +3,9 @@
 
 The homepage article list is the catalog (titles, descriptions, YouTube URLs).
 This script gives each episode its own URL, unique head metadata, TVEpisode and
-VideoObject JSON-LD, breadcrumbs, and previous/next links. It does not invent
-air dates or upload dates — none are published on the site.
+VideoObject JSON-LD, breadcrumbs, and previous/next links. Verified video dates
+and episode thumbnails come from .github/data/video-metadata.json. Unknown
+dates stay absent: never substitute a site rebuild date or invent an air date.
 
 Re-run after editing an episode card in index.html:
 
@@ -18,6 +19,7 @@ import json
 import re
 import sys
 from html import escape, unescape
+from video_metadata import load_video_metadata
 
 
 def html_text(value: str) -> str:
@@ -286,6 +288,7 @@ def json_ld(ep: dict, episodes: list[dict]) -> str:
     n = ep["n"]
     url = page_url(n)
     video_id = ep["youtube"].rsplit("/", 1)[-1]
+    metadata = ep["video_metadata"]
     graph = [
         {
             "@type": "WebPage",
@@ -345,14 +348,14 @@ def json_ld(ep: dict, episodes: list[dict]) -> str:
             "@id": f"{url}#video",
             "name": ep["title"],
             "description": ep["plain"],
-            "thumbnailUrl": HERO_IMAGE,
+            "thumbnailUrl": metadata["thumbnailUrl"],
+            **({"uploadDate": metadata["uploadDate"]} if metadata["status"] == "verified" else {}),
             "url": ep["youtube"],
             "embedUrl": f"https://www.youtube.com/embed/{video_id}",
             "inLanguage": "en",
         },
     ]
-    # `episodes` is accepted so callers can pass the catalog; dates are omitted
-    # because the site does not publish an air date or upload date.
+    # Publication of this exact YouTube video is separate from a TV air date.
     del episodes
     payload = {"@context": "https://schema.org", "@graph": graph}
     return json.dumps(payload, ensure_ascii=False, indent=2)
@@ -483,6 +486,15 @@ def render_sitemap(episodes: list[dict]) -> str:
 
 def transform(html: str, existing_css: str) -> tuple[str, str, dict[int, str], str]:
     episodes = parse_episodes(html)
+    metadata = load_video_metadata(ROOT)
+    catalog_ids = {ep["youtube"].rsplit("/", 1)[-1] for ep in episodes}
+    if set(metadata) != catalog_ids:
+        raise SystemExit("video metadata must match the exact homepage video IDs")
+    for ep in episodes:
+        entry = metadata[ep["youtube"].rsplit("/", 1)[-1]]
+        if entry["episode"] != ep["n"]:
+            raise SystemExit(f"video metadata does not match episode {ep['n']}")
+        ep["video_metadata"] = entry
     metas = [meta_description(ep["plain"]) for ep in episodes]
     if len(set(metas)) != len(metas):
         raise SystemExit("episode meta descriptions are not unique")
