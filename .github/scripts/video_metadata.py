@@ -39,13 +39,27 @@ def load_video_metadata(root):
             value = record.get("uploadDate")
             if not valid_timestamp(value):
                 raise ValueError(f"{video_id}: invalid or future uploadDate")
-            # Current evidence comes directly from the original YouTube record.
+            # Accept only corroborated fields read from the exact YouTube watch page.
             fields = record.get("sourceFields", {})
-            if fields.get("playerMicroformatRenderer.publishDate") != value:
-                raise ValueError(f"{video_id}: uploadDate disagrees with verified publication")
             if fields.get("meta[itemprop=datePublished]") != value:
                 raise ValueError(f"{video_id}: publication meta tag does not corroborate the date")
-            if not all(record.get(key) for key in ("sourceTitle", "channelId", "retrievedAt", "sourceSha256")):
+            if record.get("evidenceType") == "youtube-watch-page-dom":
+                if fields.get("meta[itemprop=uploadDate]") != value:
+                    raise ValueError(f"{video_id}: upload meta tag does not corroborate the date")
+                if record.get("channelUrl") != "https://www.youtube.com/@missiononeeleven2447":
+                    raise ValueError(f"{video_id}: unexpected source channel")
+            elif record.get("evidenceType") == "youtube-watch-page-response":
+                if any(fields.get(key) != value for key in (
+                    "playerMicroformatRenderer.publishDate", "playerMicroformatRenderer.uploadDate"
+                )):
+                    raise ValueError(f"{video_id}: uploadDate disagrees with verified publication")
+                if record.get("channelId") != "UCpp2TgO-EiiiPnXgAFa4J5g":
+                    raise ValueError(f"{video_id}: unexpected source channel")
+            else:
+                raise ValueError(f"{video_id}: unsupported source evidence")
+            if record.get("sourceTitle") != f"The Assignment Episode {record['episode']}":
+                raise ValueError(f"{video_id}: source title does not identify this episode")
+            if not all(record.get(key) for key in ("retrievedAt", "sourceSha256", "sourceHashScope")):
                 raise ValueError(f"{video_id}: incomplete source evidence")
         elif record.get("status") == "unverified":
             if "uploadDate" in record or not record.get("reason"):

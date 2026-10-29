@@ -53,7 +53,9 @@ class VideoMetadataTests(unittest.TestCase):
         self.reject_manifest(lambda r: r["Kv2HmDKY9Jk"].update(sourceUrl="https://www.youtube.com/watch?v=MqkBidv5LRU"))
 
     def test_substituted_date_is_rejected(self):
-        self.reject_manifest(lambda r: r["Kv2HmDKY9Jk"].update(uploadDate="2026-10-28T00:00:00Z"))
+        for video_id in ("Kv2HmDKY9Jk", "_curg73S194"):
+            with self.subTest(video_id=video_id):
+                self.reject_manifest(lambda r: r[video_id].update(uploadDate="2026-10-28T00:00:00Z"))
 
     def test_unknown_date_is_never_emitted(self):
         ep = copy.deepcopy(self.catalog[0])
