@@ -89,7 +89,7 @@ YOUTUBE_ICON = (
 
 FONT_LINKS = """  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,ital,wght@6..96,500;6..96,600&family=Libre+Franklin:wght@400;500;600;700;800;900&display=swap"></noscript>"""
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800;900&display=swap"></noscript>"""
 
 FOOTER = """  <footer><div class="foot"><span>© 2026 The Assignment: Ethiopia</span><span>Landscape photography: <a href="https://www.clubmed.be/l/quand-partir-en-ethiopie" target="_blank" rel="noopener">Ethiopia</a></span></div></footer>"""
 
