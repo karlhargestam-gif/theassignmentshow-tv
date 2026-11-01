@@ -36,7 +36,7 @@
   <meta name="twitter:image:alt" content="The Ethiopian highlands, setting of The Assignment: Ethiopia documentary series" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,ital,wght@6..96,500;6..96,600&family=Libre+Franklin:wght@400;500;600;700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,ital,wght@6..96,500;6..96,600&family=Libre+Franklin:wght@400;500;600;700;800;900&display=swap"></noscript>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800;900&display=swap"></noscript>
   <style>
     :root {
       --bg:#0b0b0b; --surface:#141414; --surface-2:#1d1d1d; --ink:#f7f7f5;
@@ -62,7 +62,7 @@
     .poster-mark{border-left:clamp(.45rem,1vw,.7rem) solid var(--red);padding-left:clamp(1rem,2.2vw,2rem)}
     .hero-kicker{margin:0 0 .4rem;font-size:clamp(.78rem,1.5vw,1rem);font-weight:700;letter-spacing:.26em;text-transform:uppercase}
     h1{margin:0;font-size:clamp(3.15rem,11.5vw,9.5rem);line-height:.78;letter-spacing:-.075em;font-weight:900;text-transform:uppercase;max-width:9ch}
-    .ethiopia{display:block;margin-top:.4rem;font-family:"Bodoni Moda",serif;font-style:italic;font-size:clamp(2.8rem,8.5vw,7rem);font-weight:500;letter-spacing:-.04em;text-transform:none;color:#fff}
+    .ethiopia{display:block;margin-top:.4rem;font-family:"Libre Franklin",sans-serif;font-style:normal;font-size:clamp(2.6rem,8vw,6.5rem);font-weight:800;letter-spacing:-.05em;text-transform:none;color:#fff}
     .tagline{margin:clamp(1.3rem,3vw,2.2rem) 0 0;max-width:28rem;font-size:clamp(1rem,1.8vw,1.25rem);font-weight:600;letter-spacing:.02em}
     .hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.6rem}
     .btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:48px;padding:.75rem 1rem;border:1px solid currentColor;text-decoration:none;font-size:.77rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;transition:background .2s,color .2s,border-color .2s}
@@ -76,14 +76,14 @@
     h2{font-size:clamp(2.45rem,6.4vw,5.7rem);line-height:.95;letter-spacing:-.055em;margin:0;font-weight:800}
     .lede{font-size:clamp(1.25rem,2.8vw,2.25rem);line-height:1.32;letter-spacing:-.025em;margin:1.8rem 0 0;max-width:35ch}
     .about{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(260px,.6fr);gap:clamp(2rem,7vw,7rem);align-items:end}
-    .quote{margin:0;padding-top:1.2rem;border-top:2px solid var(--red);font-family:"Bodoni Moda",serif;font-size:clamp(1.25rem,2.2vw,1.75rem);font-style:italic;line-height:1.35;color:var(--muted)}
+    .quote{margin:0;padding-top:1.2rem;border-top:2px solid var(--red);font-family:"Libre Franklin",sans-serif;font-size:clamp(1.2rem,2.1vw,1.65rem);font-style:normal;font-weight:500;line-height:1.35;color:var(--muted)}
     .episodes{background:var(--surface)}
     .episode-intro{display:flex;align-items:end;justify-content:space-between;gap:2rem;margin-bottom:3rem}
     .episode-intro p{margin:0 0 .35rem;max-width:28rem;color:var(--muted)}
     .episode-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--line)}
     .episode{position:relative;padding:clamp(1.4rem,3vw,2.3rem) clamp(0rem,2.4vw,2.3rem) 2.3rem;border-bottom:1px solid var(--line);display:flex;flex-direction:column;min-height:320px}
     .episode:nth-child(odd){padding-left:0;border-right:1px solid var(--line)}
-    .episode-number{font-family:"Bodoni Moda",serif;font-size:clamp(3rem,6vw,5rem);line-height:1;color:var(--red);font-variant-numeric:tabular-nums}
+    .episode-number{font-family:"Libre Franklin",sans-serif;font-weight:800;letter-spacing:-.04em;font-size:clamp(3rem,6vw,5rem);line-height:1;color:var(--red);font-variant-numeric:tabular-nums}
     .episode h3{font-size:clamp(1.4rem,2.5vw,2rem);line-height:1.13;letter-spacing:-.035em;margin:.8rem 0 .9rem}
     .episode p{margin:0;color:var(--muted);font-size:.95rem;max-width:58ch}
     .episode .btn{align-self:flex-start;margin-top:auto;padding-top:.65rem;padding-bottom:.65rem;min-height:42px;color:var(--ink)}
@@ -101,7 +101,7 @@
         /* WCAG AA contrast for section labels: darker red on light sections, lighter red on the black cast section. */
     .section-label{color:var(--red-dark)}#cast .section-label{color:#ff5a61}
     .mini-poster::before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.86));z-index:-1}
-    .mini-poster .top{font-size:.7rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase}.mini-poster .title{font-size:clamp(2.3rem,5vw,4rem);font-weight:900;letter-spacing:-.07em;line-height:.8;text-transform:uppercase}.mini-poster .title em{display:block;font-family:"Bodoni Moda",serif;font-weight:500;text-transform:none;font-size:1.05em;letter-spacing:-.03em}.mini-poster .bottom{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase}
+    .mini-poster .top{font-size:.7rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase}.mini-poster .title{font-size:clamp(2.3rem,5vw,4rem);font-weight:900;letter-spacing:-.07em;line-height:.8;text-transform:uppercase}.mini-poster .title em{display:block;font-family:"Libre Franklin",sans-serif;font-weight:700;font-style:normal;text-transform:none;font-size:1.05em;letter-spacing:-.03em}.mini-poster .bottom{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase}
     footer{background:#050505;color:#aaa;padding:1.5rem clamp(1.15rem,7vw,7rem);font-size:.72rem}
     footer .foot{max-width:1240px;margin:auto;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}footer a{color:#ccc}
     @media(max-width:760px){
